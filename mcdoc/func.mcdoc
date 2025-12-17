@@ -1,0 +1,16 @@
+
+dispatch minecraft:storage[placeit:in] to struct In {
+
+}
+
+dispatch minecraft:storage[placeit:out] to struct Out {
+
+}
+
+dispatch minecraft:storage[placeit:abstract/in] to struct AbstractIn {
+
+}
+
+dispatch minecraft:storage[placeit:abstract/out] to struct AbstractOut {
+
+}
