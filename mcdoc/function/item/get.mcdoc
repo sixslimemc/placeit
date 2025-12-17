@@ -1,0 +1,9 @@
+use ::placeit::mcdoc::def::CommonIn
+
+struct In {
+    ...CommonIn
+}
+
+struct Out {
+    result: ::java::world::item::SingleItem
+}

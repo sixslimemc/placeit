@@ -1,0 +1,5 @@
+
+struct CommonIn {
+    place_command: #[command] string,
+    components?: ::java::world::component::DataComponentPatch,
+}

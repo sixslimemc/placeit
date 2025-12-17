@@ -1,0 +1,41 @@
+{
+	"criteria": {
+		"main": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"block": {
+								"blocks": "minecraft:barrel",
+								"predicates": {
+									"minecraft:container": {
+										"items": {
+											"contains": [
+												{
+													"predicates": {
+														"minecraft:custom_data": {
+															"placeit": {
+																"_": {
+																	"data_item": true
+																}
+															}
+														}
+													}
+												}
+											]
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "placeit:_/adv/place"
+	}
+}
