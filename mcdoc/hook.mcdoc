@@ -1,4 +1,0 @@
-
-dispatch minecraft:storage[placeit:hook] to struct Hook {
-
-}
