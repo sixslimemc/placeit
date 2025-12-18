@@ -24,6 +24,7 @@ data modify storage slimecore:in manifest.pack.abstract_implementations set valu
 data modify storage slimecore:in manifest.pack.dependencies set value []
 data modify storage slimecore:in manifest.pack.dependencies append value {pack_id:"varchunk", author_id:"sixslime", optional:false, version:{major:0, minor:1}, download:{url:"TODO", version:{major:1, minor:0, patch:0}}}
 data modify storage slimecore:in manifest.pack.dependencies append value {pack_id:"delay", author_id:"sixslime", optional:false, version:{major:0, minor:1}, download:{url:"TODO", version:{major:1, minor:0, patch:0}}}
+data modify storage slimecore:in manifest.pack.dependencies append value {pack_id:"ddaline", author_id:"sixslime", optional:false, version:{major:0, minor:1}, download:{url:"TODO", version:{major:1, minor:0, patch:0}}}
 
 data modify storage slimecore:in manifest.pack.is_library set value true
 
