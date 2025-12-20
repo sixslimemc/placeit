@@ -16,11 +16,9 @@
 												{
 													"predicates": {
 														"minecraft:custom_data": {
-															"placeit": {
-																"_": {
-																	"place_data": {
-																		"present": true
-																	}
+															"_placeit": {
+																"place_data": {
+																	"present": true
 																}
 															}
 														}
