@@ -1,7 +1,4 @@
 
 dispatch mcdoc:custom_data[placeit] to struct {
-    placeable: struct {
-        command: #[command] string,
-        data?: any
-    }
+    placeable?: boolean
 }

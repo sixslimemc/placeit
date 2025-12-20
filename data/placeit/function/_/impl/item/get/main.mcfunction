@@ -16,5 +16,4 @@ data modify storage placeit:out get.result.components."minecraft:container" appe
 data modify storage placeit:out get.result.components."minecraft:tooltip_display".hidden_components append value "container"
 execute unless data storage placeit:out get.result.components."minecraft:item_name" run data modify storage placeit:out get.result.components."minecraft:item_name" set value {text:"('item_name' component not set)"}
 
-data modify storage placeit:out get.result.components."minecraft:custom_data".placeit.placeable.command set from storage placeit:in get.place_command
-data modify storage placeit:out get.result.components."minecraft:custom_data".placeit.placeable.data set from storage placeit:in get.place_data
+data modify storage placeit:out get.result.components."minecraft:custom_data".placeit.placeable set value true
