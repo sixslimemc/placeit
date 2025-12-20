@@ -18,3 +18,13 @@ dispatch minecraft:storage[placeit:_/in] to struct {
 dispatch minecraft:storage[placeit:_/out] to struct {
     [any]: any
 }
+
+dispatch mcdoc:custom_data[placeit] to struct {
+    "_": struct {
+        place_data: struct {
+            present: boolean,
+            command: #[command] string,
+            data?: any
+        }
+    }
+}

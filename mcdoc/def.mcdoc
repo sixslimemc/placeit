@@ -1,5 +1,15 @@
 
 struct CommonIn {
     place_command: #[command] string,
-    components?: ::java::world::component::DataComponentPatch,
+    place_data?: any,
+    item_components?: ::java::world::component::DataComponentPatch,
+}
+
+enum(byte) AxisRotation {
+    PosX = 1,
+    NegX = 2,
+    PosY = 3,
+    NegY = 4,
+    PosZ = 5,
+    NegZ = 6,
 }
