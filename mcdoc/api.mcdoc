@@ -2,7 +2,7 @@ use super::def::AxisRotation
 
 dispatch minecraft:storage[placeit:api] to struct Api {
     this: struct {
-        facing: AxisRotation,
+        facing_axis: AxisRotation,
         data?: any
     }
 }
