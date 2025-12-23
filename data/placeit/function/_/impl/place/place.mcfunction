@@ -4,7 +4,6 @@
 # ./main
 #--------------------
 
-$say $(command)
 setblock ~ ~ ~ air
 
 data modify storage placeit:api this.facing_axis set from storage placeit:_ v.place.facing
