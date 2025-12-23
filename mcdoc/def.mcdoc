@@ -1,4 +1,6 @@
 
+type PlacerItem = ::java::world::item::SingleItem
+
 struct CommonIn {
     place_command: #[command] string,
     place_data?: any,
@@ -13,3 +15,4 @@ enum(byte) AxisRotation {
     PosZ = 4,
     NegZ = 5,
 }
+

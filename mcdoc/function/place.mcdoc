@@ -1,0 +1,12 @@
+// places <item> at the current position, as if the placing player is rotated as the current rotation.
+// RETURNS:
+// 1: success; <item> is a PlacerItem (placeit.placeable = true in custom data)
+// 0: <item> is not a PlacerItem
+
+use ::placeit::mcdoc::def::PlacerItem
+
+struct In {
+    item: PlacerItem
+}
+
+struct Out {}

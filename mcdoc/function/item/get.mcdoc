@@ -1,9 +1,10 @@
 use ::placeit::mcdoc::def::CommonIn
+use ::placeit::mcdoc::def::PlacerItem
 
 struct In {
     ...CommonIn
 }
 
 struct Out {
-    result: ::java::world::item::SingleItem
+    result: PlacerItem
 }
