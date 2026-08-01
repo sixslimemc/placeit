@@ -1,8 +1,8 @@
-use ::placeit::mcdoc::def::CommonIn
+use ::placeit::mcdoc::def::ItemInput
 use ::placeit::mcdoc::def::PlacerItem
 
 struct In {
-    ...CommonIn
+    ...ItemInput
 }
 
 struct Out {

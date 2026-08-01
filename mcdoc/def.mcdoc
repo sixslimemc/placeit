@@ -1,13 +1,17 @@
 
 type PlacerItem = ::java::world::item::SingleItem
+type PlaceCommand = #[command] string
+type PlaceData = any
 
-struct CommonIn {
-    place_command: #[command] string,
-    place_data?: any,
-    item_components?: ::java::world::component::DataComponentPatch,
+struct ItemInput {
+    place: struct {
+        command: PlaceCommand,
+        data?: PlaceData,
+    },
+    components?: ::java::world::component::DataComponentPatch
 }
 
-enum(byte) AxisRotation {
+enum(byte) BlockFacingDirection {
     PosX = 0b,
     NegX = 1b,
     PosY = 2b,
