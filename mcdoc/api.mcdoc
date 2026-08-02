@@ -1,8 +1,9 @@
 use super::def::BlockFacingDirection
+use super::def::PlaceData
 
 dispatch minecraft:storage[placeit:api] to struct Api {
-    placed: struct {
+    placed: [struct {
         facing_direction: BlockFacingDirection,
-        data?: any
-    }
+        data?: PlaceData
+    }],
 }

@@ -11,18 +11,16 @@ dispatch minecraft:storage[placeit:_] to struct {
     u: VariableRegister,
     /// in-scope temp
     x: VariableRegister,
+    // for reentrant functions
+    eval: [struct {
+        in: any,
+        out: any,
+        v: VariableRegister,
+    }],
 }
 dispatch minecraft:storage[placeit:_/in] to struct {
     [any]: any
 }
 dispatch minecraft:storage[placeit:_/out] to struct {
     [any]: any
-}
-
-dispatch mcdoc:custom_data["_placeit"] to struct {
-    place_data: struct {
-        present?: boolean,
-        command?: #[command] string,
-        data?: any
-    }
 }
