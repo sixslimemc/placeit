@@ -8,6 +8,7 @@ struct ItemInput {
         command: PlaceCommand,
         data?: PlaceData,
     },
+    /// "minecraft:container" will be ignored.
     components?: ::java::world::component::DataComponentPatch
 }
 
