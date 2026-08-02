@@ -5,6 +5,7 @@
 
 scoreboard players set *place.placed _placeit 1
 
+particle flame ~ ~ ~ 0 0 0 0.1 100
 data modify storage placeit:in explicit_place.place set from block ~ ~ ~ components."minecraft:custom_data".placeit.place
 # DEBUG:
 tellraw @a ["IN: ", {'storage':'placeit:in', 'nbt':'explicit_place.place'}]
