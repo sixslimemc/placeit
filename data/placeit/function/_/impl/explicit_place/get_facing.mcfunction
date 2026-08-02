@@ -3,6 +3,7 @@
 #--------------------
 # ./main
 #--------------------
+tp @s ~ ~ ~ ~ ~
 kill @s
 
 data modify storage placeit:_ x.rot set from entity @s Rotation
