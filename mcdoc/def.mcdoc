@@ -1,15 +1,9 @@
-
-type PlacerItem = ::java::world::item::SingleItem
 type PlaceCommand = #[command] string
 type PlaceData = any
 
-struct ItemInput {
-    place: struct {
-        command: PlaceCommand,
-        data?: PlaceData,
-    },
-    /// "minecraft:container" will be ignored.
-    components?: ::java::world::component::DataComponentPatch
+struct PlaceSpec {
+    command: PlaceCommand,
+    data?: PlaceData,
 }
 
 enum(byte) BlockFacingDirection {

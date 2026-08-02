@@ -1,4 +1,6 @@
 
+use super::def::PlaceSpec
+
 dispatch mcdoc:custom_data[placeit] to struct {
-    placeable?: boolean
+    place: PlaceSpec,
 }
