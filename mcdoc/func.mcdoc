@@ -1,10 +1,8 @@
 
 dispatch minecraft:storage[placeit:in] to struct In {
-    generate: super::function::item::generate::In,
     place: super::function::place::In,
 }
 
 dispatch minecraft:storage[placeit:out] to struct Out {
-    generate: super::function::item::generate::Out,
     place: super::function::place::Out,
 }
