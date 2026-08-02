@@ -3,6 +3,9 @@
 # ./check_block
 #--------------------
 
+# DEBUG
+say yes
+
 scoreboard players set *place.placed _placeit 1
 
 data modify storage placeit:in explicit_place.place set from block ~ ~ ~ components."minecraft:custom_data".placeit.place
