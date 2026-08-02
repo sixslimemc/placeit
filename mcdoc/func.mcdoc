@@ -1,8 +1,8 @@
 
 dispatch minecraft:storage[placeit:in] to struct In {
-    place: super::function::place::In,
+    explicit_place: super::function::explicit_place::In,
 }
 
 dispatch minecraft:storage[placeit:out] to struct Out {
-    place: super::function::place::Out,
+    explicit_place: super::function::explicit_place::Out,
 }

@@ -3,8 +3,7 @@
 # ./check_area
 #--------------------
 
-execute unless block ~ ~ ~ minecraft:barrel run return fail
-execute unless items block ~ ~ ~ container.0 *[minecraft:custom_data~{_placeit:{place_data:{present:true}}}] run return fail
+execute unless data block ~ ~ ~ components."minecraft:custom_data".placeit.place run return fail
 
 function placeit:_/main/place/place
 
