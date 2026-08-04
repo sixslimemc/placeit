@@ -2,8 +2,12 @@
 #--------------------
 # @delay:delayed : _/adv/place
 #--------------------
+tag @s remove _placeit.placed
 
-execute store result score *place.reach _placeit run data get storage delay:api this.data.reach
+# store reach in *.reach:
+scoreboard players operation *place.reach _placeit = @s _placeit.place_reach
+scoreboard players reset @s _placeit.place_reach
+
 scoreboard players add *place.reach _placeit 2
 
 scoreboard players set *place.placed _placeit 0
@@ -18,4 +22,3 @@ execute if score *place.i _placeit matches 1.. run function placeit:_/main/place
 
 execute if score *place.placed _placeit matches 1 run return 1
 
-say ??
