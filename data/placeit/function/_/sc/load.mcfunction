@@ -2,7 +2,6 @@
 # @ LOAD
 
 scoreboard objectives add _placeit dummy
-scoreboard objectives add _placeit.place_time dummy
 scoreboard objectives add _placeit.place_reach dummy
 
 # DECLARE _scores:
